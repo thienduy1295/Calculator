@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display">0</div>
+      <div class="calculator-keys">
+        <div class="row">
+          <div class="button-wrapper"><button class="button">7</button></div>
+          <div class="button-wrapper"><button class="button">8</button></div>
+          <div class="button-wrapper"><button class="button">9</button></div>
+          <div class="button-wrapper"><button class="button">DEL</button></div>
+        </div>
+        <div class="row">
+          <div class="button-wrapper"><button class="button">4</button></div>
+          <div class="button-wrapper"><button class="button">5</button></div>
+          <div class="button-wrapper"><button class="button">6</button></div>
+          <div class="button-wrapper">
+            <button class="button key-operator" data-action="add">+</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="button-wrapper"><button class="button">1</button></div>
+          <div class="button-wrapper"><button class="button">2</button></div>
+          <div class="button-wrapper"><button class="button">3</button></div>
+          <div class="button-wrapper">
+            <button class="button key-operator" data-action="subtract">
+              -
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="button-wrapper"><button class="button">0</button></div>
+          <div class="button-wrapper">
+            <button class="button key-operator" data-action="decimal">.</button>
+          </div>
+          <div class="button-wrapper">
+            <button class="button key-operator" data-action="divide">/</button>
+          </div>
+          <div class="button-wrapper">
+            <button class="button key-operator" data-action="multiply">
+              x
+            </button>
+          </div>
+        </div>
+        <div class="row row-end">
+          <div class="button-wrapper">
+            <button class="button button-end key-operator" data-action="clear">
+              AC
+            </button>
+          </div>
+          <div class="button-wrapper">
+            <button
+              class="button button-end key-operator"
+              data-action="calculate"
+            >
+              =
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
